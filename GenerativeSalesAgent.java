@@ -3,7 +3,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class GenerativeSalesAgent {
-    private static final String OPENAI_API_KEY = "SUA_API_KEY_AQUI";
+    private static final String OPENAI_API_KEY = "Coloque sua API KEY aqui";
     private static final String OPENAI_API_URL = "https://api.openai.com/v1/chat/completions";
 
     public static String gerarResposta(String mensagem) throws IOException {
