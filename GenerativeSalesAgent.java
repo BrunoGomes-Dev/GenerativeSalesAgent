@@ -1,6 +1,7 @@
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Scanner;
 
 public class GenerativeSalesAgent {
     private static final String OPENAI_API_KEY = "SUA_API_KEY_AQUI";
@@ -44,5 +45,19 @@ public class GenerativeSalesAgent {
         String pergunta = reader.readLine();
         String resposta = gerarResposta(pergunta);
         System.out.println("IA: " + resposta);
+        
+
     }
+    public void AvaliarRedeSocial(){
+        String redeSocial;
+
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Adicione o link da sua rede social aqui: ");
+        redeSocial = ler.nextLine();
+        
+        
+
+    }
+
+
 }
