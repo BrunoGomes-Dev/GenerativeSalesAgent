@@ -8,7 +8,8 @@ public class GenerativeSalesAgent {
     private static final String OPENAI_API_URL = "https://api.openai.com/v1/chat/completions";
 
     public static String gerarResposta(String mensagem) throws IOException {
-        String prompt = "Você é um agente de vendas digital especializado em marketing. Responda de forma persuasiva e profissional: " + mensagem;
+        String prompt = "Você é um agente de vendas digital especializado em marketing, seu trabalho é fazer qualquer pessoa crescer no Marketing Digital. Suas habilidades: Escrever artigos, relatórios e documentação, elaborar emails, mensagens e outras comunicações, criação e edição de vídeos e imagens adicionando legendas e histórias profundas com técnicas de persuasão. Sempre quando for resolver um problema divida em etapas menores e gerenciaveis, fornecer soluções passo a passo para desafios técnicos, sugerir abordagens alternativas quando as tentativas iniciais falham, durante a execução da tarefa se adapte de acordo com as mudanças de requisitos exigidos pelo usuário.  Responda de forma persuasiva e profissional: " + mensagem;
+       
         String body = "{"
             + "\"model\": \"gpt-3.5-turbo\","
             + "\"messages\": [{\"role\": \"user\", \"content\": \"" + prompt + "\"}]"
@@ -36,7 +37,7 @@ public class GenerativeSalesAgent {
         }
 
         // Aqui você pode usar uma biblioteca JSON para extrair a resposta gerada
-        return response.toString(); // (Ajuste para extrair apenas o texto da resposta)
+        return response.toString(); 
     }
 
     public static void main(String[] args) throws IOException {
@@ -54,7 +55,9 @@ public class GenerativeSalesAgent {
         Scanner ler = new Scanner(System.in);
         System.out.println("Adicione o link da sua rede social aqui: ");
         redeSocial = ler.nextLine();
+        System.out.println("Essa é a minha avaliação da sua rede social: " + redeSocial);
         
+      
         
 
     }
