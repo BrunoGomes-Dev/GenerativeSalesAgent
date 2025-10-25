@@ -1,7 +1,13 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
+
+   
+
 
 public class GenerativeSalesAgent {
     private static final String OPENAI_API_KEY = "SUA_API_KEY_AQUI";
@@ -65,3 +71,7 @@ public class GenerativeSalesAgent {
 
 
 }
+      
+        
+
+ 
